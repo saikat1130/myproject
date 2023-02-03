@@ -1,0 +1,117 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href = " {% static '/myproj/css/style.css' %} " >
+    
+    <title>Home Page</title>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="col-sm-10">
+
+      <h1 class="my-5 mx-5">Home</h1>
+      
+
+    
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <title>Memorable outdoor Hiking</title>
+
+<body calss="py-5">
+    <style>
+        body{
+            background-color:rgb(229, 226, 226);
+
+        }
+        .container{
+            background-color: rgb(254, 254, 254);
+            padding: 3.15em;
+
+        }
+        .panel{
+            border-radius:  0.5rem;
+            margin-bottom: 1rem;
+            
+        }
+        .panel.panel-lavender{
+            background-color: rgb(239, 237, 237);
+            color: #000000;
+            position: flex;
+            font-size:1.1em ;
+
+        }
+        h1{
+            color: rgb(22, 153, 2);
+        }
+       </style>
+
+    <div class="container-xxl py-5  "><img src="/myproj/images/pexels-andrei-tanase-1271619.jpg" sizes="100%"></div> 
+    <div class="container">
+         <div class="row">
+            <div class="col">
+                <div class="panel panel-lavender py-5 px-3" ><h1>‖ Tode-Tangta's Diary:</h1>
+
+                    Tode and Tangta are small mountain twin villages on the border of Bhutan in the lap of the Himalayas. Just 110 KM from Siliguri and 60 KM from New Maljang, this beautiful spiritual tour has made a special place in the mind's heart. To serve the mind, to realize oneself, one has to return again and again to the seemingly unpaved hill village l Here we were at Joseph Lepcha and Digal Lepcha Jeer Kardammam Homestay l You have to come to the market by ordinary vehicle and cross the remaining five kilometers uphill in an old-fashioned jeep or Land Rover l By the time we reached Tode's Pala village through dense forest and cardamom gardens, it was evening here. We were welcomed at the homestay by Dighal Ji and his family. The rooms were not specially arranged but quite good. There is a designated place for campfire. In the evening, there is a large arrangement of barbecue chicken, momos, pakoras, etc. From breakfast to lunch-dinner chicken, pork, fish or eggs. Any pada is served very deliciously and with great care by Dighal Ji and other family members l Enjoy the view of Bhutan and Kalimpong hills behind the homestay, listen to the chirping of birds, walk through the cardamom garden or thick forest or do light hiking, this village is for you. You will need Dighal ji's 10-year-old son Derek as a guide. And yes, not to mention Sarmey and Marger. Their friendliness and love will blow your mind away. You can bathe in the church, the river Dabai Khola or Medicine River located on the border between Bhutan and Bengal and the old hanging bridge. I was accompanied by Dighal ji himself. It was mainly due to his inspiration that I managed to gather the courage to cross the Kharsrota river twice. It was a wonderful experience. Night l will be arranged by Dighal Ji Rai. Be well-Tangta. All my best wishes to Digal Ji, Joseph Lepcha Ji and their families. thank you
+                    
+                    <h3>‖ How to arrive:</h3>
+                    
+                    * From Siliguri/NJP/New-Mal Railway Station to Tode Tangta to Chalsa, Jaldhaka and Kan.
+                    
+                    <h3>‖ Contact :</h3>
+                    
+                    9434808303/9474998950
+                </div>   
+            </div>   
+            <div class="col">
+                <div class="panel panel-lavender"><img src="/myproj/images/about display 4.jpg" sizes="100%"></div>
+                
+            </div>
+         </div>
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-lavender py-5"><img src="/myproj/images/about 2.jpg"></div>
+            </div>
+            <div class="col">
+                <div class="panel panel-lavender py-5 px-2.3"><img src="/myproj/images/about 3.jpg"></div>
+            </div>
+        </div> 
+    </div>       
+      
+
+
+
+      {% for post in posts %}
+
+      <div class="blogField">
+
+          <div class="container">
+
+            {% comment %} <img src= "{{post.image.url}}" style="width: 400px; height: 200px;"> {% endcomment %}
+
+                <h1 class="display-4">{{post.title}}</h1>
+
+              <p class="lead">{{post.desc|safe}}</p>
+              
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
